@@ -1,0 +1,49 @@
+<p>first works!</p>
+<h1>{{firstName}}</h1>
+<p class="btn btn-primary">{{currentDate}}</p>
+
+<!-- simple text -->
+<div class="row">
+  <div class="col-3">
+    <p>{{firstName}}</p>
+
+  </div>
+  <div class="col-3">
+    <p>{{age}}</p>
+
+  </div>
+<div class="col-3">
+
+  <p>{{check}}</p>
+</div>
+</div>
+
+<!-- input field -->
+
+<div class="row">
+  <div class="col-3">
+    <input [type]="inputType"[(ngModel)]="firstName" class="form-control" />
+
+  </div>
+  <div class="col-3">
+    <input [value]="firstName">
+  </div>
+  <div class="col-3">
+    <select [(ngModel)]="check">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="h">h</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3">
+    <button class="btn btn-success" (click)="display()">display Alart </button>
+  </div>
+  <div class="col-3">
+    <button class="btn btn-success" (click)="show('bye bye')">show Alart </button>
+  </div>
+</div>
+
+
+

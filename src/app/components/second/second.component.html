@@ -1,0 +1,19 @@
+
+<div class="row">
+  <div class="col-12 text-center">
+    <div class="btn-group">
+      <button type="button" (click)="changTab('First')" class="btn btn-primary">First</button>
+      <button type="button" (click)="changTab('Third')" class="btn btn-primary">Third</button>
+    </div>
+  </div>
+</div>
+
+<h3>{{add()}}</h3>
+
+<div class="row">
+  <div class="col-12" *ngIf="currentComponent=='First'">
+<app-first></app-first>
+ </div>
+ <div class="col-12" *ngIf="currentComponent=='Third'">
+  <app-third></app-third>
+</div>
